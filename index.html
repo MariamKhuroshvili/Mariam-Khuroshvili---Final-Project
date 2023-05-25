@@ -29,11 +29,8 @@
                         <img class="logo" src="images/logo.svg" alt="logo">
                     </a>
                 </div>
-                <div class="burgerBar" id="burBar">
-                    <i class="burger fa-solid fa-bars"></i>     
-                 </div>
                 <nav class="navigation navActive" id="navBar">
-                    <ul>
+                    <ul class="nav-ul">
                         <li><a class="header-a" href="index.html">Home</a></li>
                         <li><a class="header-a" href="#">About Us</a></li>
                         <li><a class="header-a" href="#">Menu</a></li>
@@ -41,21 +38,23 @@
                         <li><a class="header-a" href="#">Make Order Online</a></li>
                     </ul>
                 </nav>
+                <div class="burgerBar" id="burBar">
+                    <i class="burger fa-solid fa-bars"></i>     
+                 </div>
             </div>
             <div class="header-text">
                 <h3 class="header-h3">Welcome To Our Restaurant</h3>
                 <h1 class="header-h1">The Soul of Asia</h1>
-                <p class="header-p">Here is everything for you and your dear ones</p>
-            </div>
+            </div>  
         </div>
     </header>
+
     <!-- section 1-->
     <section>
-        <div class="container1">
+        <div class="container1 flex1">
             <div class="text-1">
                 <h2 class="section1-h2">The Soul of Asia</h2>
                 <p class="section1-p">Our Restaurant, is situated in East Street behind St Ives Market Hill. The Restaurant has been owned and run by Jasmine Cheung since November 2005, and has developed into one of the most popular Chinese Restaurants in the whole region. We would like to thanks all our customers for their continued support and kind messages we regularly receive from our guests regarding our high quality of service and delicious food.</p>
-                <p class="section1-p">The restaurant is spacious with a relaxing and sophisticated ambience. Tables of all sizes are available from cosy romantic table for two, to large round tables for larger parties with a special occasion to celebrate. </p>
                 <a class="container1-a" href="https://welcomechinese.co.uk/our-story/">See more...</a>
             </div>
             <div class="image1">
@@ -145,7 +144,7 @@
                      </div>
                 </div>
                 <div class="team-introduction">
-                    <img class="team-image" src="images/manager.png" alt="image">
+                    <img class="team-image" src="images/manager.jpg" alt="image">
                      <div class="team-introduction-text">
                         <h2 class="introduction-h2">Young Son ju</h2>
                         <h3 class="introduction-h3">Our Restaurant Manager</h3>
@@ -165,53 +164,52 @@
         <div class="order-block">
             <h3 class="order-h3">Make order online</h3>
             <form class="form-element" action="action">
-            <div class="form-wraper">
-              <label for="username">Your Name</label>
-              <input
-                class="input-value"
-                type="text"
-                id="username"
-                name="myusernameValue"
-                placeholder="Enter Your Name"
-                required
-            />
-            </div>
-            <div class="form-wraper">
-              <label for="lastname">Your Last Name</label>
-              <input
-                class="input-value"
-                type="text"
-                id="lastname"
-                name="mylastnameValue"
-                placeholder="Enter Your Last Name"
-                required
-              />
-            </div>
-            <div class="form-wraper">
-                <label for="address">Your Address</label>
-                <input
-                  class="input-value"
-                  type="text"
-                  id="address"
-                  name="addressValue"
-                  placeholder="Enter Your Address"
-                  required
-                />
-              </div>
+                <div class="form-wraper">
+                    <label for="username">Your Name</label>
+                        <input
+                            class="input-value"
+                            type="text"
+                            id="username"
+                            name="myusernameValue"
+                            placeholder="Enter Your Name"
+                            required
+                        />
+                </div>
+                <div class="form-wraper">
+                    <label for="lastname">Your Last Name</label>
+                        <input
+                            class="input-value"
+                            type="text"
+                            id="lastname"
+                            name="mylastnameValue"
+                            placeholder="Enter Your Last Name"
+                            required
+                        />
+                </div>
+                <div class="form-wraper">
+                    <label for="address">Your Address</label>
+                        <input
+                            class="input-value"
+                            type="text"
+                            id="address"
+                            name="addressValue"
+                            placeholder="Enter Your Address"
+                            required
+                        />
+                </div>
     
-            <div class="form-wraper">
-              <label for="menu">Choose from Menu</label>
-              <select class="select-form" name="mymenu" id="menu">
-                <option value="none" selected disabled hidden>menu</option>
-                <option value="dumplings">dumplings</option>
-                <option value="sushi">sushi</option>
-                <option value="noodles">noodles</option>
-              </select>
-            </div>
-            <button class="btn-submit" type="submit">Submit</button>
-
+                <div class="form-wraper">
+                    <label for="menu">Choose from Menu</label>
+                        <select class="select-form" name="mymenu" id="menu">
+                            <option value="none" selected disabled hidden>menu</option>
+                            <option value="dumplings">dumplings</option>
+                            <option value="sushi">sushi</option>
+                            <option value="noodles">noodles</option>
+                        </select>
+                </div>
+                <button class="btn-submit" type="submit">Submit</button>
+            </form>
         </div>
-        
     </section>
     <!-- section 5 -->
     <section>
@@ -231,7 +229,7 @@
                     </li>
                     <li>
                         <span>E-mail:</span>
-                        <a href="mailto:name@rapidtables.com?subject=test123">Thesoulofasia@gmail.com</a>
+                        <a href="mailto:name@rapidtables.com?subject=test123">soulofasia@gmail.com</a>
                     </li>
                 </ul>
             </div>
@@ -243,13 +241,15 @@
     <footer>
         <div class="footer">
             <div class="footer-child ">
-                        <ul>
-                            <li><a class="header-a" href="index.html">Home</a></li>
-                            <li><a class="header-a" href="#About">About Us</a></li>
-                            <li><a class="header-a" href="#Menu">Menu</a></li>
-                            <li><a class="header-a" href="#OurTeam">Our Team</a></li>
-                            <li><a class="header-a" href="#MakeOrder">Make Order Online</a></li>
-                        </ul>
+                <div class="footer-element">
+                    <ul>
+                        <li><a class="header-a" href="index.html">Home</a></li>
+                        <li><a class="header-a" href="#About">About Us</a></li>
+                        <li><a class="header-a" href="#Menu">Menu</a></li>
+                        <li><a class="header-a" href="#OurTeam">Our Team</a></li>
+                        <li><a class="header-a" href="#MakeOrder">Make Order Online</a></li>
+                    </ul>
+                </div>   
                 <div class="footer-element">
                    <h4 class="footer-h4">Opening Hours</h4>
                    <p class="footer-p">Monday: Closed</p>
@@ -271,7 +271,7 @@
                         +788 222 222
                     </p>
                     <p class="footer-p"> <i class="fa-sharp fa-regular fa-envelopes-bulk"></i>
-                        Thesoulofasia@gmail.com
+                        soulofasia@gmail.com
                     </p>
                 </div>
             </div>
