@@ -45,27 +45,6 @@
     }
 }
 @media (max-width: 935px) {
-    .navigation {
-        display: none;
-    }
-    .burgerBar {
-        display: block;
-        color: bisque;
-        font-size: 30px;
-        margin-right: 10%;
-    }
-    .nav-ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        background-color: #5c5252;
-        width: 100%;
-        margin-top: 190px; 
-    }
-    .navActive {
-        display: block;
-    }
     .container2 {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -74,7 +53,6 @@
         text-align: center;
     }
 }
-
 @media (max-width: 775px) {
     .container2-wrapper {
         display: flex;
@@ -83,6 +61,14 @@
     .food-container {
         display: flex;
         flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .nav-ul {
+        display: none;
+    }
+    .burger-bar {
+        display: block;
     }
 }
 @media (max-width: 720px) {

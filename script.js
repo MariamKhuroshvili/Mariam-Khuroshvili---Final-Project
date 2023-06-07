@@ -1,7 +1,10 @@
-let navigationElement = document.getElementById('navBar');
-let burgerElement = document.getElementById('burBar');
+// "use strict";
 
+// burger bar
+let navUl = document.getElementById("ul-item");
+let burgerBar = document.getElementById("burgerBar");
 
-burgerElement.addEventListener('click',function() {
-    navigationElement.classList.toggle('navActive');
-})
+burgerBar.addEventListener("click", function () {
+  navUl.classList.toggle("toggleulNavigation");
+  burgerBar.classList.toggle("activeBugerBar");
+});

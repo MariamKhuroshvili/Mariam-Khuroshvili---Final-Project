@@ -18,42 +18,68 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
-    margin-left: 80px;
 }
 .logo {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
+    width: 80px;
     color: #fff;
     cursor: pointer;
 }
-.header-block {
-    position: fixed;
-    left: 0;    
-    top: 0;
-    height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    background-color: #5c5252;
-}
-.burgerBar {
+.burger-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(145, 105, 105);
     display: none;
-    margin-right: 10%;
-    font-size: 30px;
+    z-index: 21;
 }
-.burgerBar:hover {
+.burger-bar:hover {
     cursor: pointer;
     color: #351515;
+}
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(145, 105, 105);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
+}
+.line1 {
+    top: 30%;
+}
+.line3 {
+    top: 70%;
+}
+.activeBugerBar .line1 {
+    top:50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.activeBugerBar .line2{
+  display: none;
+}
+.activeBugerBar .line3 {
+    top:50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.nav-ul.toggleulNavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(189, 115, 115);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
 }
 .banner{
     width: 100%;
@@ -63,46 +89,21 @@
     -o-object-position:70%;
        object-position:70%;
 }
-.navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.navbar {
+    background-color:#5a4a4a;
+    padding: 30px;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    margin-left: 25%; 
-    align-items: center; 
-    text-align: center;  
-    position: fixed; 
-}
-.navActive {
-    display: block;
+    justify-content: space-between;
+    position: relative;
 }
 .nav-ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    list-style: none;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 10px;
-    width: 100%;
-    max-width: 935px;
-    font-family: 'Manrope';
-    font-weight: 700;
-    font-size: 13px;
-    color: #fff; 
 }
 .header-a {
     color: bisque;
     font-size: 20px; 
+    margin-right: 20px;
 }
 .header-text{
     width: 100%;
